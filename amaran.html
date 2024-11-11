@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        main {
+            background: url("amaran_bg.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        img {
+            margin: 50px;
+            position: relative;
+        }
+
+        .main1 {
+            display: flex;
+            justify-content: left;
+
+        }
+
+        button {
+            width: 100px;
+            height: 50px;
+            margin-top: 150px;
+            background-color: aquamarine;
+            font-weight: 700;
+        }
+
+        span {
+            position: absolute;
+            top: 300px;
+            left: 250px;
+        }
+
+        a {
+            color: rgb(239, 234, 234);
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="main1">
+            <div class="trailor">
+                <img src="amaran.jpg" height="600px" width="450px">
+                <a href="https://www.youtube.com/watch?app=desktop&v=hylIXfZeB4c"><span><i
+                            class="fa-solid fa-circle-play fa-xl"></i></span></a>
+            </div>
+            <button id="button">Book Tickets</button>
+
+        </div>
+    </main>
+</body>
+
+<script>
+    document.getElementById("button").addEventListener("click", () => {
+        window.location.href = "total_seats.html"
+    })
+</script>
+
+</html>
